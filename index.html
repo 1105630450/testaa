@@ -17,9 +17,12 @@
 </style>
 
 <link rel="stylesheet" href="css/simpleAlert.css">
+<link rel="stylesheet" href="layer/dist/css/layui.css">
 
 <script src="js/jquery.min.js"></script>
 <script src="js/simpleAlert.js"></script>
+ <script src="layer/dist/layui.all.js"></script>
+ 
 <script>
 	$(function () {
 		//单次单选弹框
@@ -38,10 +41,13 @@
 
 			var n=0;
 			var dblChoseAlert = simpleAlert({
-				"content":"做我女朋友好不好？",
+				"content":"小姐姐，我观察你很久了\n做我女朋友好不好？",
 				"buttons":{
 					"好":function () {
-						alert("3号目标已拿下！");
+					layer.alert('3号目标已拿下！', {
+
+title:"提示"
+});
 						dblChoseAlert.close();
 					},
 					"不好":function () {
@@ -49,16 +55,30 @@
 						switch(n)
 {
 case 0:
-	alert("房子写你名");
+layer.alert('房子写你名', {
+
+title:false
+});
+
+  
   break;
 case 1:
-  alert("保大");
+layer.alert('保大', {
+
+title:false
+});
   break;
   case 2:
- alert("我妈会游泳");
+layer.alert('我妈会游泳', {
+
+title:false
+});
   break;
 default:
-  alert("求求你，答应吧");
+  layer.alert('求求你答应吧', {
+
+title:false
+});
 }
 n=n+1;
 
@@ -139,7 +159,7 @@ n=n+1;
 
 <ul id="main">
 
-<li id="dblChoseAlert"><a href="#">测试</a></li>
+<li id="dblChoseAlert"><a href="#">点我</a></li>
 
 </ul>
 
