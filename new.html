@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>来自对面的小哥哥</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="layer/dist/css/layui.css">
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" ></script>
+     <script src="layer/dist/layui.all.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+<div class="container">
+    <div class="row col-md-3"></div>
+    <div class="row col-md-6" >
+        <div class="row question">
+            <div class="col-md-6 col-xs-12">
+                <p style="line-height: 50px;font-size: 20px;">“riri，我观察你很久了”</p>
+                <p style="line-height: 50px;font-size: 20px;">做我女朋友好不好？</p>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <img src="http://ozef40uqu.bkt.clouddn.com/1.png" alt="" style="height: 200px;">
+            </div>
+        </div>
+        <div class="row question" style="margin-top: 20px;">
+            <div class="col-md-6 col-xs-6" style="text-align: center;">
+                <button type="button" class="btn btn-success" style="width: 80%" id="no">好</button>
+            </div>
+            <div class="col-md-6 col-xs-6" style="text-align: center;">
+                <button type="button" class="btn btn-danger" style="width: 80%" id="ok">不好</button>
+            </div>
+        </div>
+        <div class="col-md-12 col-xs-12 hide" id="success">
+            <img src="http://5b0988e595225.cdn.sohucs.com/images/20180207/c330d2f1ca17448f96b7f9d2a00de2f9.gif" alt="" style="width: 100%;">
+        </div>
+    </div>
+
+    <div class="row col-md-3"></div>
+
+</div>
+<script>
+    var i=1;
+    var ok=false;
+    $(document).ready(function(){
+        $("#no").click(function(){
+                                                 layer.alert('3号目标已拿下！', {
+
+title:"提示"
+});
+            $(".question").addClass('hide');
+            $("#success").removeClass('hide');
+            ok=true;
+        });
+        $("#ok").click(function(){
+            switch(i){
+                case 1:
+
+                                        layer.alert('工资上交', {
+
+title:false
+});
+                    break;
+                case 2:
+
+                                        layer.alert('家务全包', {
+
+title:false
+});
+                    break;
+                case 3:
+
+                                        layer.alert('房产证写你的名字', {
+
+title:false
+});
+                    break;
+				case 4:
+
+                                        layer.alert('保大', {
+
+title:false
+});
+                    break;
+                case 5:
+
+                                        layer.alert('我妈会游泳', {
+
+title:false
+});
+                    break;
+                case 6:
+
+                                        layer.alert('不跟你吵架，会撒娇 会卖萌', {
+
+title:false
+});
+                    break;
+                default:
+
+                                        layer.alert('答应我吧', {
+
+title:false
+});
+            }
+            i++;
+        });
+    });
+</script>
+</body>
+</html>
