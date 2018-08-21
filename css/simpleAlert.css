@@ -7,3 +7,9 @@
 .simpleAlertBtn1{background-color: #826289;left: 25%;}
 .simpleAlertBtn2{background-color: #f7f7f7;color: #333;right: 25%;}
 .onlyOne{width: 200px;height: 36px;left: 138px;}
+   
+ @font-face {font-family: myHoney;src: url('/Users/helloworld/Desktop/test.ttf');}
+.wing{
+    font-family: myHoney;
+    color:#FFE379;
+}
