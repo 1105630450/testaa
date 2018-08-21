@@ -1,136 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>来自对面的小哥哥</title>
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="layer/dist/css/layui.css">
-    <script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" ></script>
-     <script src="layer/dist/layui.all.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>柚家科技</title>
+<style>
+body{ background-color: #ffffff; }
+#main {text-align:center; padding-top: 100px; padding: 100px 5% 0 5%;}
+#main img {
+  max-width: 100%;
+}
+</style>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-<div class="container">
-    <div class="row col-md-3"></div>
-    <div class="row col-md-6" >
-        <div class="row question">
-            <div class="col-md-6 col-xs-12">
-                <p style="line-height: 50px;font-size: 20px;">“riri，我观察你很久了”</p>
-                <p style="line-height: 50px;font-size: 20px;">做我女朋友好不好？</p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <img src="http://ozef40uqu.bkt.clouddn.com/1.png" alt="" style="height: 200px;">
-            </div>
-        </div>
-        <div class="row question" style="margin-top: 20px;">
-            <div class="col-md-6 col-xs-6" style="text-align: center;">
-                <button type="button" class="btn btn-success" style="width: 80%" id="no">好</button>
-            </div>
-            <div class="col-md-6 col-xs-6" style="text-align: center;">
-                <button type="button" class="btn btn-danger" style="width: 80%" id="ok">不好</button>
-            </div>
-        </div>
-        <div class="col-md-12 col-xs-12 hide" id="success">
-            <img src="http://5b0988e595225.cdn.sohucs.com/images/20180207/c330d2f1ca17448f96b7f9d2a00de2f9.gif" alt="" style="width: 100%;">
-        </div>
-    </div>
 
-    <div class="row col-md-3"></div>
+<ul id="main">
+<!-- <li id="dblChoseAlert"><a href="#" ,font-family="mFont">点我</a></li> -->
+<img src="./1.png"  alt="1" style="width: 80%; margin-bottom: 20px;"/>
+<img src="./2.png"  alt="2" />
+<img src="./3.png"  alt="3" style="margin-bottom: 20px;"/>
+<img src="./4.png"  alt="4" />
+</ul>
 
-</div>
-<script>
-<<<<<<< HEAD
-    var i=1;
-    var ok=false;
-    $(document).ready(function(){
-        $("#no").click(function(){
-                                                 layer.alert('3号目标已拿下！', {
-=======
-	$(function () {
-		//单次单选弹框
-		$("#onlyChoseAlert").click(function () {
-			var onlyChoseAlert = simpleAlert({
-				"content":"按确定消失按确定消失!",
-				"buttons":{
-					"确定":function () {
-						onlyChoseAlert.close();
-					}
-				}
-			})
-		})
-		//单次双选弹框
-		$("#dblChoseAlert").click(function () {
 
-			var n=0;
-			var dblChoseAlert = simpleAlert({
-				"content":"riri，我观察你很久了\n做我女朋友好不好？",
-				"buttons":{
-					"好":function () {
-					layer.alert('3号目标已拿下！', {
->>>>>>> 60a0946a9ce5182553a4f5cc09df9f0515a17196
-
-title:"提示"
-});
-            $(".question").addClass('hide');
-            $("#success").removeClass('hide');
-            ok=true;
-        });
-        $("#ok").click(function(){
-            switch(i){
-                case 1:
-
-                                        layer.alert('工资上交', {
-
-title:false
-});
-                    break;
-                case 2:
-
-                                        layer.alert('家务全包', {
-
-title:false
-});
-                    break;
-                case 3:
-
-                                        layer.alert('房产证写你的名字', {
-
-title:false
-});
-                    break;
-				case 4:
-
-                                        layer.alert('保大', {
-
-title:false
-});
-                    break;
-                case 5:
-
-                                        layer.alert('我妈会游泳', {
-
-title:false
-});
-                    break;
-                case 6:
-
-                                        layer.alert('不跟你吵架，会撒娇 会卖萌', {
-
-title:false
-});
-                    break;
-                default:
-
-                                        layer.alert('答应我吧', {
-
-title:false
-});
-            }
-            i++;
-        });
-    });
-</script>
 </body>
 </html>
